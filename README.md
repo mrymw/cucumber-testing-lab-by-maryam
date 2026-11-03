@@ -9,7 +9,7 @@ The API works, but it has **no tests yet**. In this lab you set up Cucumber your
 
 ## 1. Get the app running
 
-1. Clone this repo and open it in IntelliJ.
+1. Clone this repo <a href="https://github.com/mrymw/lab-pet-clinic"> Pet Clinic </a> and open it in IntelliJ.
 2. Create a PostgreSQL database called `petclinic`. The app expects it on port `5432`, with a user and password. Change these in `src/main/resources/application.properties` if your setup is different.
 3. Run `PetClinicApplication` once. The tables are created and the sample data is added.
 4. In Postman, log in as Layla and list her pets, so you know what the API sends back:
