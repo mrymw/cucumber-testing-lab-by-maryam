@@ -10,7 +10,7 @@ The API works, but it has **no tests yet**. In this lab you set up Cucumber your
 ## 1. Get the app running
 
 1. Clone this repo and open it in IntelliJ.
-2. Create a PostgreSQL database called `petclinic`. The app expects it on port `5434`, with user `postgres` and password `12345678`. Change these in `src/main/resources/application.properties` if your setup is different.
+2. Create a PostgreSQL database called `petclinic`. The app expects it on port `5432`, with a user and password. Change these in `src/main/resources/application.properties` if your setup is different.
 3. Run `PetClinicApplication` once. The tables are created and the sample data is added.
 4. In Postman, log in as Layla and list her pets, so you know what the API sends back:
    - `POST http://localhost:8080/auth/users/login` with `{ "email": "layla@mail.com", "password": "password123" }`
@@ -46,9 +46,9 @@ Tick each box as you go. Run the tests after every step.
 
 ### Part 0 – Set up Cucumber
 
-- [ ] **0.1 Look at the libraries.** Open `pom.xml` and find these 5 test libraries. Above each one, add a one-line XML comment saying what it does:
+- [ ] **0.1 Look at the libraries.** Open `pom.xml` and find these 5 test libraries. Make sure they exist:
   `cucumber-java`, `cucumber-spring`, `cucumber-junit-platform-engine`, `junit-platform-suite`, `rest-assured`.
-  Also answer in a comment: why do they all have `<scope>test</scope>`?
+  
 - [ ] **0.2 Create the folders.**
   ```
   src/test/java/com/ga/petclinic/cucumber   ← your Java test classes
